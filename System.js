@@ -259,7 +259,7 @@ client.on('ready', () => {
   });
 });
 client.on('guildMemberAdd', member=> {
-    member.addRole(member.guild.roles.find("name","- EIght , Member"));
+    member.addRole(member.guild.roles.find("name",""));
     });
 const devs = ["500390120025882646"];
 const adminprefix = ["$"];
@@ -1336,11 +1336,11 @@ var prefix = "$";
 
 client.on('guildMemberAdd', member => {
   
-  const channel = member.guild.channels.find(ch => ch.name === 'eight');
+  const channel = member.guild.channels.find(ch => ch.name === '・chat');
  
   if (!channel) return;
 
-  channel.send(`Welcomme To Eight Server , ${member}`);
+  channel.send(`Welcomme To ToP Server , ${member}`);
 })
 
 client.on("message", message => {
@@ -1363,21 +1363,21 @@ client.on("message", message => {
   });
   
 client.on('guildMemberAdd', member => {
-    let channel = member.guild.channels.find('name', 'eight');
+    let channel = member.guild.channels.find('name', '・chat');
     let memberavatar = member.user.avatarURL
       if (!channel) return;
     let embed = new Discord.RichEmbed()
         .setColor('RANDOM')
         .setThumbnail(memberavatar)
         .addField('•🔰|Name» الإسم',`${member}`)
-        .addField('•🌹|Welcome » نورت السيرفر' , `Welcome to the server, ${member}`)
+        .addField('•🌹|Welcome » نورت السيرفر' , `Welcome To The Server, ${member}`)
         .addField('•🆔| User » اي دي العضو', "**[" + `${member.id}` + "]**" )
                 .addField('➡| انت العضو رقم',`${member.guild.memberCount}`)                     
                                      .addField('•🔮|Server Name » اسم السيرفر', `${member.guild.name}`,true)
     .addField('•🕣|Time Create » مدة انشاء حسابك', member.user.createdAt.toLocaleString(), true)
  
                                        
-     .setFooter("Eight Server")
+     .setFooter("ToP Server")
         .setTimestamp()
    
       channel.sendEmbed(embed);
