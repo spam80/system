@@ -90,7 +90,7 @@ client.on("message", message => {
         color: 0x06DF00,
         description: "تم مسح الرسائل بنجاح",
         footer: {
-          text: "ToP , System" // غير هنا حط اسم البوت
+          text: "${server}" // غير هنا حط اسم البوت
         }
       }}).then(msg => {msg.delete(3000)});
                           }
